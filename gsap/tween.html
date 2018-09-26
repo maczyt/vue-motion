@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tween</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      transform: translateX(500px);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="box"> 运动特效 </div>
+  <!-- <script src="./TweenMax.min.js"></script> -->
+  <script src="./TweenMax.js"></script>
+  <script>
+    let box = document.querySelector('.box');
+    TweenLite.to(box, 2, {
+      x: 100,
+      width: 300,
+      ease: Power1.easeInOut,
+      delay: 2,
+      repeat: 2,
+      onComplete: function () {
+        console.log()
+      }
+    })
+
+  </script>
+
+</body>
+
+</html>
