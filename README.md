@@ -1,10 +1,10 @@
-# vant
+# vue-motion
 
-> A Vue.js project
+> 还在 Coding 学习中。
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
